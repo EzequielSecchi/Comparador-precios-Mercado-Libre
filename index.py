@@ -6,8 +6,8 @@ from SQLfunc.conexion_sql import crear_tabla
 from SQLfunc.conexion_sql import ingresar_dato
 from SQLfunc.conexion_sql import verificar_existencia
 
-url = "https://listado.mercadolibre.com.ar/mouse"
-nombre_tabla = "mouses"
+url = "https://listado.mercadolibre.com.ar/parlante"
+nombre_tabla = "parlantes"
 
 headers = {
     "User-Agent": "comparador-precios-script/1.0 ("+url+")"
