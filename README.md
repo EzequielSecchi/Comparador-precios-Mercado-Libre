@@ -43,17 +43,9 @@ o un visor de SQLite como `DB Browser for SQLite`.
 
 - El scraping está diseñado para Mercado Libre, pero la búsqueda depende de los selectores CSS actuales de la página. Si Mercado Libre cambia su HTML, los selectores pueden dejar de funcionar.
 - Se usa `robots.txt` para comprobar permisos antes de extraer datos.
-- El ordenamiento actual es por burbuja, se podría mejorar con `sorted(...)` o `.sort(key=lambda x: x["precio"])`.
+- El ordenamiento actual es por burbuja.
 - Por el momento, la tabla se crea con el nombre que pongas en `nombre_tabla`, por lo que debes usar identificadores válidos.
-
-## Mejoras sugeridas
-
-- Usar `with sqlite3.connect(...) as conexion:` para gestionar automáticamente la conexión.
-- Evitar construir SQL con concatenación de strings, especialmente con nombres de tablas dinámicos.
-- Usar una ordenación nativa de Python en lugar de bubble sort.
-- Añadir un archivo `requirements.txt` con las dependencias.
-- Añadir una sección de ejecución y configuración en este README.
-
+  
 ## Ejecución
 Primero activa tu entorno virtual y asegúrate de tener `requests` y `beautifulsoup4` instalados.
 
